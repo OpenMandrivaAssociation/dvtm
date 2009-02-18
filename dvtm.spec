@@ -1,5 +1,5 @@
 %define name    dvtm 
-%define version 0.4.1
+%define version 0.5.1
 %define release %mkrel 1
 %define Summary Tiling window management for the console
 Summary:        %Summary
@@ -23,7 +23,7 @@ like vim, mutt, cmus or irssi.
 
 %build
 sed -i 's/PREFIX.*local*/PREFIX\ =\ \/usr\//' config.mk
-%make unicode
+%make
 
 %install
 %{__rm} -Rf %{buildroot}
