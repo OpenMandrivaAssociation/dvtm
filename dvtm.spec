@@ -1,6 +1,6 @@
 %define name    dvtm 
-%define version 0.5.2
-%define release %mkrel 2
+%define version 0.6
+%define release %mkrel 1
 %define Summary Tiling window management for the console
 Summary:        %Summary
 Name:           %name
