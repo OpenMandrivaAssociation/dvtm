@@ -1,14 +1,13 @@
 Name:		dvtm
-Version:	0.7
+Version:	0.8
 Release:	%mkrel 1
 Summary:	Tiling window management for the console
 License:	MIT
 Group:		Terminals
 URL:		http://www.brain-dump.org/projects/dvtm/
 Source0:	http://www.brain-dump.org/projects/dvtm/%{name}-%{version}.tar.gz
-BuildRoot:	%{_tmppath}/%{name}-buildroot
-BuildRequires:	libncurses-devel
-BuildRequires:	libncursesw-devel
+BuildRequires:	pkgconfig(ncurses)
+BuildRequires:	pkgconfig(ncursesw)
 
 %description
 dvtm brings the concept of tiling window management, popularized by
@@ -26,9 +25,6 @@ sed -i 's/PREFIX.*local*/PREFIX\ =\ \/usr\//' config.mk
 %install
 %__rm -rf %{buildroot}
 %makeinstall_std
-
-%clean
-%__rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
