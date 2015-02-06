@@ -1,6 +1,6 @@
 Name:		dvtm
 Version:	0.8
-Release:	%mkrel 1
+Release:	2
 Summary:	Tiling window management for the console
 License:	MIT
 Group:		Terminals
