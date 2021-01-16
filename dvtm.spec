@@ -1,6 +1,8 @@
+%global debug_package %{nil}
+
 Name:		dvtm
-Version:	0.8
-Release:	2
+Version:	0.15
+Release:	1
 Summary:	Tiling window management for the console
 License:	MIT
 Group:		Terminals
@@ -20,18 +22,19 @@ like vim, mutt, cmus or irssi.
 
 %build
 sed -i 's/PREFIX.*local*/PREFIX\ =\ \/usr\//' config.mk
-%make
+%make_build
 
 %install
 %__rm -rf %{buildroot}
-%makeinstall_std
+%make_install
 
 %files
 %defattr(-,root,root)
-%doc README LICENSE
+%doc README* LICENSE
 %{_bindir}/%{name}
 %{_bindir}/%{name}-status
 %{_mandir}/man1/%{name}.1*
+%{_datadir}/terminfo/d/dvtm*
 
 
 
