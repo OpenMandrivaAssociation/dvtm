@@ -34,6 +34,7 @@ sed -i 's/PREFIX.*local*/PREFIX\ =\ \/usr\//' config.mk
 %{_bindir}/%{name}
 %{_bindir}/%{name}-status
 %{_mandir}/man1/%{name}.1*
+%{_datadir}/terminfo/d/dvtm*
 
 
 
