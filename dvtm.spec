@@ -1,3 +1,5 @@
+%global debug_package %{nil}
+
 Name:		dvtm
 Version:	0.15
 Release:	1
