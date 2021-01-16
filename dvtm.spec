@@ -28,7 +28,7 @@ sed -i 's/PREFIX.*local*/PREFIX\ =\ \/usr\//' config.mk
 
 %files
 %defattr(-,root,root)
-%doc README LICENSE
+%doc README* LICENSE
 %{_bindir}/%{name}
 %{_bindir}/%{name}-status
 %{_mandir}/man1/%{name}.1*
