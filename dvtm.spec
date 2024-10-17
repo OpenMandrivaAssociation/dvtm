@@ -6,7 +6,7 @@ Release:	1
 Summary:	Tiling window management for the console
 License:	MIT
 Group:		Terminals
-URL:		http://www.brain-dump.org/projects/dvtm/
+URL:		https://www.brain-dump.org/projects/dvtm/
 Source0:	http://www.brain-dump.org/projects/dvtm/%{name}-%{version}.tar.gz
 BuildRequires:	pkgconfig(ncurses)
 BuildRequires:	pkgconfig(ncursesw)
