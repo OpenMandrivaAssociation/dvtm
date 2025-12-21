@@ -8,6 +8,7 @@ License:	MIT
 Group:		Terminals
 URL:		https://www.brain-dump.org/projects/dvtm/
 Source0:	http://www.brain-dump.org/projects/dvtm/%{name}-%{version}.tar.gz
+BuildRequires:	make
 BuildRequires:	pkgconfig(ncurses)
 BuildRequires:	pkgconfig(ncursesw)
 
